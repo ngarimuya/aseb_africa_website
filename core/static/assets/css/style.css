@@ -7823,7 +7823,7 @@ html .ui-button.ui-state-disabled:active {
 }
 @media (max-width: 1199px) {
   .td_site_header.td_style_1.td_type_4 .td_nav_list_wrap {
-    background-color: var(--accent-color);
+    background-color: white;
   }
   .td_site_header.td_style_1.td_type_4 .td_nav {
     color: #fff;
