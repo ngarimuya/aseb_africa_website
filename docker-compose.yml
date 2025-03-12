@@ -1,0 +1,24 @@
+
+services:
+  asebweb:
+    build:
+      context: .
+      dockerfile: DockerFile
+    #
+#    command: gunicorn ncawebsite.wsgi:application --bind 0.0.0.0:8006
+    command: python manage.py runserver 0.0.0.0:3006
+    volumes:
+      - /etc/staticfiles:/home/app/web/staticfiles
+#      - /var/www/portal/media:/home/app/web/media
+    ports:
+      - 3006:3006
+#    networks:
+#      - data-network
+#    env_file:
+#      - ./.env.prod
+    restart: always
+volumes:
+  static_volume:
+#networks:
+#  data-network:
+#    external: true
