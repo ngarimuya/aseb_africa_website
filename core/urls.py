@@ -4,6 +4,6 @@ from core import views
 
 urlpatterns = [
     path('', views.index, name='cea-homepage'),
-
+    path('contact-us', views.show_contact_us, name='contact_us'),
 
 ]
