@@ -5677,7 +5677,7 @@ label {
 }
 
 .td_page_heading {
-  min-height: 580px;
+  min-height: 200px;
   position: relative;
   padding: 200px 0 60px;
 }
@@ -5688,7 +5688,7 @@ label {
 }
 @media (max-width: 991px) {
   .td_page_heading {
-    min-height: 450px;
+    min-height: 200px;
   }
 }
 .td_page_heading .breadcrumb {
